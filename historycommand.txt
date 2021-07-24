@@ -1,0 +1,300 @@
+    1  change passwd test1
+    2  chmod -R 777 projectgit1
+    3  chmod -R 777 test
+    4  cd /
+    5  chmod -R 777 test
+    6  chmod -R 777 /projectgit1/
+    7  chmod -R 777 projectgit02
+    8  ll
+    9  chmod -R 777 dbdata
+   10  ll
+   11  chmod -R 777 /tmp/dbdata
+   12  ll
+   13  cd ..
+   14  ll
+   15  sudo docker start webgolang
+   16  sudo docker logs -f webgolang
+   17  sudo docker ps
+   18  cd dbdata/
+   19  rm -rf *
+   20  ll
+   21  cd ..
+   22  chmod -R 777 mysqldata
+   23  chmod -R 777 java01/
+   24  chmod -R 777 java01
+   25  mkdir docker_images
+   26  chmod -R 777 /docker_images
+   27  ll
+   28  cat > Dockerfile
+   29  vi Dockerfile
+   30  cat Dockerfile 
+   31  docker build -t khanhdinh/nodejs .
+   32  docker images
+   33  service docker status
+   34  cat Dockerfile 
+   35  ll
+   36  docker images
+   37  sudo su
+   38  cd /docker_images/image03-compose/
+   39  cd nodejs-todolist/
+   40  ll
+   41  cat > init.sql
+   42  cat init.sql 
+   43  vi init.sql 
+   44  cat /etc/shells 
+   45  sudo docker ps
+   46  sudo docker network ls
+   47  docker rm nodejs-todolist_todoapp
+   48  docker network rm nodejs-todolist_todoapp
+   49  docker network ls
+   50  docker ls
+   51  docker ps
+   52  docker rm -f db ghost-blog postgresql webgolang web01 khanhsite01
+   53  docker ps
+   54  docker rm -f react-app
+   55  docker ps
+   56  docker-compose up
+   57  docker ps
+   58  docker ps -a
+   59  docker-compose up
+   60  vi init.sql
+   61  docker-compose up
+   62  docker-compose up -d
+   63  docker ps
+   64  ll
+   65  rm -rf docker-compose.yml.bkp
+   66  git config --list
+   67  git remot add main https://github.com/dinhkhanh2410/docker-compose
+   68  git remote add main https://github.com/dinhkhanh2410/docker-compose
+   69  git config --list
+   70  git config --help
+   71  git remote add origin git@github.com:dinhkhanh2410/docker-compose.git
+   72  git remote add main git@github.com:dinhkhanh2410/docker-compose.git
+   73  git remote add origin01 git@github.com:dinhkhanh2410/docker-compose.git
+   74  git config --list
+   75  git branch -M main
+   76  git push -u origin01 main
+   77  git remote add origin02 https://github.com/dinhkhanh2410/docker-compose.git
+   78  git branch -M main
+   79  git push origin02 main
+   80  ll
+   81  git add . $$ commit -m "update docker-compose"
+   82  git add . $$ git commit -m "update docker-compose"
+   83  git add . && git commit -m "update docker-compose"
+   84  git push origin02 main
+   85  git pull orgin02 main
+   86  git pull origin02 main
+   87  ll
+   88  cat README.md
+   89  ll
+   90  docker ps
+   91  docker run -d --name dockertraining -p 8082:80 docker/getting-started
+   92  docker ps
+   93  mkdir image02
+   94  cd image02/
+   95  git clone https://github.com/handuy/angular-hero.git
+   96  ll
+   97  cd angular-hero/
+   98  ll
+   99  cd ..
+  100  ll
+  101  mv image02 /docker_images/
+  102  cd ..
+  103  ll
+  104  cd image02
+  105  ll
+  106  cd angular-hero/
+  107  ll
+  108  touch Dockerfile
+  109  vi Dockerfile 
+  110  docker build -t khanhdinh/angular01
+  111  docker build -t khanhdinh/angular01 .
+  112  cat Dockerfile
+  113  vi Dockerfile
+  114  docker build -t khanhdinh/angular01 .
+  115  docker build -t khanhdinh/angular01 . --no-cache
+  116  vi Dockerfile 
+  117  docker build -t khanhdinh/angular01 . --no-cache
+  118  docker images
+  119  docker run -d --name angular01 -p 8083:80 khanhdinh/angular01
+  120  docker rm angular01
+  121  docker run -d --name angular01 -p 8087:80 khanhdinh/angular01
+  122  docker ps
+  123  cd /
+  124  sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+  125  sudo chmod +x /usr/local/bin/docker-compose
+  126  docker-compose -v
+  127  cd docker_images/
+  128  ll
+  129  mkdir image03-compose
+  130  cd image03-compose/
+  131  ll
+  132  git clone https://github.com/handuy/nodejs-todolist.git
+  133  ll
+  134  cd nodejs-todolist/
+  135  ll
+  136  touch docker-compose.yml
+  137  vi docker-compose.yml
+  138  cat docker-compose.yml 
+  139  vi docker-compose.yml 
+  140  docker-compose up
+  141  vi docker-compose.yml
+  142  docker-compose up
+  143  vi docker-compose.yml
+  144  docker-compose up
+  145  vi docker-compose.yml
+  146  docker ps
+  147  docker-compose up
+  148  mv docker-compose.yml docker-compose.yml.bkp
+  149  vi docker-compose.yml
+  150  docker-compose up
+  151  docker ps
+  152  docker-compose up
+  153  vi docker-compose.yml
+  154  docker ps -a
+  155  docker container -a
+  156  docker container ls -a
+  157  docker-compose up
+  158  cat init.sql
+  159  cat docker-compose.yml
+  160  history
+  161  git config -list
+  162  git config --list
+  163  docker build -t dinhxkhanh/demo-service .
+  164  docker images
+  165  ll
+  166  cat Dockerfile 
+  167  cd ..
+  168  ll
+  169  cd image03-compose/
+  170  cd nodejs-todolist/
+  171  ll
+  172  car Dockerfile 
+  173  cat Dockerfile 
+  174  history
+  175  vi Dockerfile 
+  176  ll
+  177  cd ..
+  178  ll
+  179  cd image02
+  180  cd angular-hero/
+  181  ll
+  182  cat Dockerfile 
+  183  cd /tmp/nodejsdata/
+  184  ll
+  185  rm -rf *
+  186  ll
+  187  cd /docker_images/image06-compose/
+  188  cd nodejs-mongodb/
+  189  ll
+  190  docker login
+  191  cd /tmp/nodejsdata/
+  192  ll
+  193  mkdir /docker_images/image07 && cd /docker_images/image07
+  194  ll
+  195  git clone https://github.com/thuongnn/restful-api-golang.git
+  196  ll
+  197  cd restful-api-golang/
+  198  ll
+  199  touch Dockerfile
+  200  vi Dockerfile 
+  201  cp /docker_images/image06-compose/nodejs-mongodb/docker-compose.yml /docker_images/image07/restful-api-golang/docker-compose.yml
+  202  vi docker-compose.yml
+  203  vi Dockerfile
+  204  vi docker-compose.yml
+  205  docker-compose up
+  206  ll
+  207  docker-compose up
+  208  vi docker-compose.yml
+  209  vi Dockerfile 
+  210  vi Dockerfile
+  211  docker-compose up
+  212  vi docker-compose.yml
+  213  docker-compose up
+  214  docker ps
+  215  docker-compose down
+  216  vi docker-compose.yml
+  217  docker-compose up
+  218  vi docker-compose.yml
+  219  vi Dockerfile
+  220  docker-compose up
+  221  mv docker-compose.yml docker-compose.yml.bkp
+  222  touch docker-compose.yml
+  223  cat docker-compose.yml
+  224  cat docker-compose.yml.bkp 
+  225  vi docker-compose.yml
+  226  docker-compose up
+  227  vi Dockerfile
+  228  vi docker-compose.yml
+  229  docker-compose up
+  230  vi docker-compose.yml
+  231  docker-compose up
+  232  vi Dockerfile 
+  233  vi docker-compose.yml
+  234  docker-compose up
+  235  cat Dockerfile 
+  236  cat docker-compose.yml
+  237  vi docker-compose.yml
+  238  docker-compose up
+  239  vi docker-compose.yml
+  240  docker-compose up
+  241  vi docker-compose.yml
+  242  rm -rf docker-compose.yml
+  243  vi docker-compose.yml
+  244  docker-compose up
+  245  vi docker-compose.yml
+  246  rm -rf docker-compose.yml
+  247  cat > docker-compose.yml
+  248  vi docker-compose.yml
+  249  docker-compose up
+  250  vi docker-compose.yml
+  251  docker-compose up
+  252  vi docker-compose.yml
+  253  rm -rf docker-compose.yml
+  254  vi docker-compose.yml
+  255  docker-compose up
+  256  vi docker-compose.yml
+  257  docker-compose up
+  258  vi docker-compose.yml
+  259  docker-compose up
+  260  vi docker-compose.yml
+  261  docker-compose up
+  262  docker-compose down
+  263  vi docker-compose.yml
+  264  docker-compose up --build
+  265  docker-compose down
+  266  cat docker-compose.yml
+  267  vi docker-compose.yml
+  268  docker-compose up -d
+  269  docker-compose down
+  270  cat docker-compose.yml
+  271  git config --list
+  272  git remote add origin01 https://github.com/dinhkhanh2410/dockerpactice02.git
+  273  gir branch -M main
+  274  git branch -M main
+  275  git push origin01 main
+  276  ll
+  277  git add Dockerfile $$ docker-compose.yml
+  278  git add Dockerfile $$ git add docker-compose.yml
+  279  ll
+  280  git add Dockerfile
+  281  git add docker-compose.yml
+  282  git commit -m "update dockerfile and docker compose"
+  283  git push origin01 main
+  284  cd /docker_images/image05-compose/spring-app-demo/
+  285  cat Dockerfile
+  286  cp Dockerfile /docker_images/image04-compose/spring-app-demo-01/Dockerfile3
+  287  cd /docker_images/image04-compose/spring-app-demo-01/
+  288  ll
+  289  cat Dockerfile3
+  290  git add Dockerfile3
+  291  git commit -m "update method 2 here"
+  292  git config --list
+  293  git push origin01 main
+  294  history $pwd
+  295  ll
+  296  history >> /tmp/historycommand.txt
+  297  ll /tmp/historycommand
+  298  ll /tmp/histor*
+  299  chmod -R 777 /tmp/historycommand.txt
+  300  history >> historycommand.txt
